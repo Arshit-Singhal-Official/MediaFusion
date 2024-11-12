@@ -291,3 +291,35 @@ QUALITY_RANKING = {
     for rank, qualities in enumerate(reversed(QUALITY_GROUPS.values()))
     for quality in qualities
 }
+
+LANGUAGE_TO_COUNTRY_EMOJI = {
+    "English": "🇺🇸",
+    "Tamil": "🇮🇳",
+    "Hindi": "🇮🇳",
+    "Malayalam": "🇮🇳",
+    "Kannada": "🇮🇳",
+    "Telugu": "🇮🇳",
+    "Chinese": "🇨🇳",
+    "Russian": "🇷🇺",
+    "Arabic": "🇸🇦",
+    "Japanese": "🇯🇵",
+    "Korean": "🇰🇷",
+    "Taiwanese": "🇹🇼",
+    "Latino": "🇲🇽",
+    "French": "🇫🇷",
+    "Spanish": "🇪🇸",
+    "Portuguese": "🇵🇹",
+    "Italian": "🇮🇹",
+    "German": "🇩🇪",
+    "Ukrainian": "🇺🇦",
+    "Polish": "🇵🇱",
+    "Czech": "🇨🇿",
+    "Thai": "🇹🇭",
+    "Indonesian": "🇮🇩",
+    "Vietnamese": "🇻🇳",
+    "Dutch": "🇳🇱",
+    "Bengali": "🇧🇩",
+    "Turkish": "🇹🇷",
+    "Greek": "🇬🇷",
+    "Unknown": "❓",
+}

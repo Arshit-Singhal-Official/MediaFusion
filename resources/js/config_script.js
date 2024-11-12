@@ -353,6 +353,9 @@ function getUserData() {
     const selectedSortingOptions = Array.from(document.querySelectorAll('#streamSortOrder .form-check-input:checked')).map(el => el.value);
     const torrentDisplayOption = document.querySelector('input[name="torrentDisplayOption"]:checked').value;
 
+    // Collect language display option
+    const isShowLanguageCountry = document.querySelector('input[name="languageDisplayOption"]:checked').value === 'icon';
+
     // Collect nudity filter data
     const selectedNudityFilters = Array.from(document.querySelectorAll('input[name="nudity_filter"]:checked')).map(el => el.value);
 
@@ -375,6 +378,7 @@ function getUserData() {
         max_streams_per_resolution: maxStreamsPerResolution,
         torrent_sorting_priority: selectedSortingOptions,
         show_full_torrent_name: torrentDisplayOption === 'fullName',
+        is_show_language_country: isShowLanguageCountry,
         nudity_filter: selectedNudityFilters,
         certification_filter: selectedCertificationFilters,
         language_sorting: languageSorting,

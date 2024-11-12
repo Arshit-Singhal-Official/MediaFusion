@@ -179,6 +179,7 @@ class UserData(BaseModel):
     max_size: int | str | float = Field(default=math.inf, alias="ms")
     max_streams_per_resolution: int = Field(default=10, alias="mspr")
     show_full_torrent_name: bool = Field(default=True, alias="sftn")
+    is_show_language_country: bool = Field(default=False, alias="islc")
     torrent_sorting_priority: list[str] = Field(
         default=const.TORRENT_SORTING_PRIORITY, alias="tsp"
     )

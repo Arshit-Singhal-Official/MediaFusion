@@ -556,3 +556,6 @@ def calculate_max_similarity_ratio(
     max_similarity_ratio = max([title_similarity_ratio] + aka_similarity_ratios)
 
     return max_similarity_ratio
+
+def convert_language_to_country_icon(language: str) -> str:
+    return const.LANGUAGE_TO_COUNTRY_EMOJI.get(language, language)
